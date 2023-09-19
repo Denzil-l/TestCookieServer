@@ -18,7 +18,7 @@ app.get('/', (req,res) => {
         httpOnly: true,
         maxAge: 60 * 1000, // Время жизни куки в миллисекундах (здесь 60 секунд)
       });
-    res.status(200).send('text')
+    res.status(200).json({x:'text'})
     console.log("Я выполнил запрос")
 })
 
